@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaebcc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 100px; /* Adicionando uma margem na parte inferior */
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    flex: 1;
+}
+
+.left img {
+    max-width: 70%;
+    height: auto;
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.right p {
+    font-size: 30px; /* Aumentando o tamanho do texto */
+}
+
+.videos {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Definindo duas colunas */
+    grid-gap: 20px; /* Adicionando espaçamento entre os vídeos */
+}
+
+.videos iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+
+footer {
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #fff;
+    }
+    to {
+        box-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00, 0 0 50px #ffcc00, 0 0 60px #ffcc00;
+    }
+}
